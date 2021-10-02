@@ -42,7 +42,8 @@ app.use(express.urlencoded({extended : false}));
 //     }
 // }
 
-
+console.log('hello')
+console.log('hello world')
 
 app.get('/home' , async (req, res) => {
     try {

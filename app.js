@@ -53,6 +53,8 @@ app.get('/home' , async (req, res) => {
     }
 })
 
+console.log('i am new')
+
 app.get('/user' , async (req, res) => {
    try {
        console.log('working on user thread')

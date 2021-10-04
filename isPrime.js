@@ -13,6 +13,9 @@ process.on('message' , message => {
 })
 
 
+
+
+
 function checkIfPrime(number){
     let isPrime = true;
     for (let i = 2; i < number; i++){

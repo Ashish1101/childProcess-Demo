@@ -1,11 +1,15 @@
 module.exports = {
     hello : {
-        frequency : '* * * * * *',
+        frequency : '50-59 * * * * *',
         handler : 'handler/hello'
     },
 
     goodBye : {
-        frequency : '* * * * * *',
+        frequency : '6 10 * * *',
         handler : 'handler/goodBye'
+    },
+    Email : {
+        frequency : '20-30 * * * * *',
+        handler : 'handler/Email'
     }
 }

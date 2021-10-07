@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 const child = require('child_process')
@@ -9,7 +10,7 @@ const config = require('./config')
 
 //cron scheduler to run function at specific time
 //https://crontab.guru/ for creating timing
-// scheduler.cronInit(config)
+scheduler.cronInit(config)
 
 
 //child process

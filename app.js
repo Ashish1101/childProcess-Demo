@@ -10,7 +10,8 @@ const config = require('./config')
 
 //cron scheduler to run function at specific time
 //https://crontab.guru/ for creating timing
-scheduler.cronInit(config)
+// scheduler.cronInit(config)
+
 
 
 //child process
@@ -42,6 +43,15 @@ app.get('/isPrime/:num' , async (req, res) => {
     }
 })
 
+
+//emitter use case
+
+const emitter = require('./Events')
+if(8 % 2 == 0) {
+    emitter.emit('loadId', 'comments' , 1)
+} else {
+    emitter.emit('error' , new Error('calculation err'))
+}
 
 
 app.listen(5000 , () => console.log('running'))
